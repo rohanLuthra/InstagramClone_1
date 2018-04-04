@@ -1,2 +1,3 @@
 # InstagramClone_1
-Instagram Clone till profile_activity
+Attempt to make Instagram Clone app on 100% firebase backend and Andorid Studio.
+#Till ProfileActivity and Login
