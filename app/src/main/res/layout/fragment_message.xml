@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="4dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -10,6 +11,36 @@
         android:layout_marginTop="50dp"
         android:textSize="20sp"
         android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/messageContent"
+        android:layout_above="@+id/messageBox"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Type your message..."
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/black_border"
+        android:id="@+id/messageBox"/>
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="-55dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_arrow"
+        android:background="@drawable/white_round_button"
+        android:layout_toRightOf="@id/messageBox"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/sendButton"/>
 
 </RelativeLayout>
 
